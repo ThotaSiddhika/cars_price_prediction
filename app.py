@@ -422,7 +422,7 @@ if predict:
             },
         )
         predicted_log_price = model.predict(input_row)[0]
-        predicted_price = int(np.expm1(predicted_log_price))
+        predicted_price = int(predicted_log_price)
 
         st.markdown(
             f"""
